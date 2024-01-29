@@ -49,7 +49,7 @@ class Livre {
      
     public function getPubliYears(): string
     {
-        return $this->publiYears->format("Y");
+        return $this->publiYears;
     }
 
     

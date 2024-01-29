@@ -66,7 +66,7 @@ class Auteur {
 
 
     function afficherBibliographie(){
-        $result ="<strong>Livres de ".$this."<br><br><ul>";
+        $result ="<strong>Livres de ".$this." :<br><br><ul style='list-style-type:none;'></strong>";
         foreach($this->livres as $livre){
             $result .= "<li>$livre</li>";
         }
