@@ -2,12 +2,12 @@
 
 class Livre {
     private string $title;
-    private string $nbPages;
+    private int $nbPages;
     private string $publiYears;
-    private string $price;
+    private int $price;
     private auteur $auteur;
 
-    public function __construct(string $title,string $publiYears, string $nbPages, string $price, Auteur $auteur)
+    public function __construct(string $title,string $publiYears, int $nbPages, int $price, Auteur $auteur)
     {
         $this->title = $title;
         $this->nbPages = $nbPages;

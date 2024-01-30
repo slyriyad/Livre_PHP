@@ -64,9 +64,13 @@ class Auteur {
         $this->livres[] = $livre;
     }
 
-
+/**
+ * Fonction pour générer et retourner la liste bibliographique au format HTML.
+ * Représentation HTML de la liste bibliographique.
+ */
     function afficherBibliographie(){
         $result ="<strong>Livres de ".$this." :<br><br><ul style='list-style-type:none;'></strong>";
+        // Parcours de chaque livre dans la liste et ajout à la chaîne HTML
         foreach($this->livres as $livre){
             $result .= "<li>$livre</li>";
         }
